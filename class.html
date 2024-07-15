@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <style>
+            /* .grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  background-color: #2196F3;
+  padding: 10px;
+}
+.grid-item {
+  background-image: url("https://images.ctfassets.net/hrltx12pl8hq/01rJn4TormMsGQs1ZRIpzX/16a1cae2440420d0fd0a7a9a006f2dcb/Artboard_Copy_231.jpg?fit=fill&w=600&h=600");
+  background-size: cover;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+} */
+
+/* .bg-container {
+    height: 100vh;
+    width: 100vw;
+  display: grid;
+  gap: 1px;
+  background-color: #b2d4f1;
+  padding: 10px;
+}
+
+.irc {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 0px;
+}
+.irc1{
+    grid-row: 1;
+    grid-column: 1 / span 2;
+}
+.irc2{
+    grid-column: 3 / span 2;
+    grid-row: 1 / span 2;
+}
+.irc5{
+    grid-row: 3;
+    grid-column: 1 / span 3;
+}
+.irc9{
+    grid-row: 4;
+    grid-column: 4;
+}
+.irc8{
+    grid-row: 4;
+    grid-column: 2 / span 2;
+} */
+   
+   
+
+/* CSS */
+/* .navbar {
+  padding: 1rem 1rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  color: #333;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #0069d9;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #333;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.dropdown-item {
+  padding: 0.25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #333;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+}
+
+.dropdown-item:hover {
+  color: #0069d9;
+  background-color: #f5f5f5;
+}
+
+.dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  overflow: hidden;
+  border-top: 1px solid #e5e5e5;
+} */
+
+
+/* Global styles */
+
+
+
+
+
+.navbar {
+  background-color: #f0f0f0;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  margin-right: 1rem;
+}
+
+.navbar-toggler {
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-toggler-icon {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.navbar-collapse {
+  flex-basis: 100%;
+  align-items: center;
+}
+
+.navbar-nav {
+  flex-direction: column;
+  align-items: center;
+}
+
+.nav-item {
+  margin-right: 2rem;
+}
+
+.nav-link {
+  color: #333;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover {
+  color: #666;
+}
+
+.nav-link.active {
+  color: #337ab7;
+}
+
+.form-control {
+  width: 200px;
+  margin-right: 1rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+}
+
+.btn-outline-primary {
+  color: #337ab7;
+  border-color: #337ab7;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.btn-outline-primary:hover {
+  background-color: #337ab7;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .navbar-expand-lg .navbar-nav {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .navbar-expand-lg .navbar-nav .nav-item {
+    margin-right: 0;
+  }
+  .navbar-expand-lg .form-control {
+    width: 300px;
+  }
+}
+
+
+
+.nav{
+    height: 100vh;
+    width: 100vw;
+    background-color: #ccc;
+}
+.nave{
+    height: 100vh;
+    width: 100vw;
+    background-color: aliceblue;
+}
+.navee{
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgreen;
+}
+
+
+</style>
+
+    </head>
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#naveen">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#navee">Link 1</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#nav">Link 2</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link 3</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-primary" type="submit">Search</button>
+              </form>
+            </div>
+          </nav>
+        
+          <div id="naveen" class="nav">
+            <h1>Naveen</h1>
+          </div>
+          <div id="navee" class="nave">
+            <h1>Naveen</h1>
+          </div>
+          <div id="nav" class="navee">
+            <h1>Naveen</h1>
+          </div>
+        
+        <!-- HTML -->
+<!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+    </div>
+  </nav> -->
+
+
+        
+       
+
+        <!-- <div class="nav">
+            <div class="nave"></div>
+        </div> -->
+
+        <!-- <form action="practise.html">
+            <label for="email"></label>
+            <input type="email" id="emain" name="emial" pattern="[A-Za-z0-9]+@">
+        </form> -->
+
+
+        <!-- <form action="practise.html">
+            <label for="date">date</label>
+            <input type="date" name="date" id="date" pattern="\d" title="date shiuld be YYYY-MM-DD" required>
+        </form> -->
+
+        <!-- <video controls>
+            <source src="./9R(3-07-2024)CSS.mp4">
+        </video><br><br> -->
+
+
+        <!-- <form action="./practise.html">
+            <label for="coders">First Name</label>
+            <input type="text" name="coders" id="coders" pattern="[A-Za-z0-9 ]+" min="2" max="8" title="only characters & numbers" required>
+            <input type="submit" value="Submit">
+        </form><br><br> -->
+
+        <div class="bg-container">
+            <div class="irc irc1"><!--<img src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_640.jpg" height="500px" width="500px" alt="image">--></div>
+            <div class="irc irc2"><!--<img src="https://img.freepik.com/free-photo/abstract-autumn-beauty-multi-colored-leaf-vein-pattern-generated-by-ai_188544-9871.jpg" height="200px" width="300px" alt="image">--></div>  
+            <div class="irc irc3"><!--<img src="https://img.freepik.com/free-photo/painting-mountain-lake-with-mountain-background_188544-9126.jpg" height="200px" width="300px" alt="image">--></div>
+            <div class="irc irc4"><!--<img src="https://i0.wp.com/picjumbo.com/wp-content/uploads/breathtaking-bali-nature-free-photo.jpg?w=600&quality=80" height="200px" width="300px" alt="image">--></div>
+            <div class="irc irc5"><!--<img src="https://images.ctfassets.net/hrltx12pl8hq/28ECAQiPJZ78hxatLTa7Ts/2f695d869736ae3b0de3e56ceaca3958/free-nature-images.jpg?fit=fill&w=1200&h=630" height="300px" width="1000px" alt="image">--></div>
+            <div class="irc irc6"><!--<img src="https://d38b044pevnwc9.cloudfront.net/cutout-nuxt/enhancer/2.jpg" height="200px" width="300px" alt="image">--></div>
+            <div class="irc irc7"><!--<img src="https://wallpapers.com/images/featured/image-79gc4p3mqu7an848.jpg" height="200px" width="300px" alt="image">--></div>
+            <div class="irc irc8"><!--<img src="https://burst.shopifycdn.com/photos/photo-of-a-cityscape-with-a-ferris-wheel.jpg?width=1000&format=pjpg&exif=0&iptc=0" height="200px" width="300px" alt="image">--></div>  
+            <div class="irc irc9"><!--<img src="https://static.vecteezy.com/vite/assets/photo-masthead-375-BoK_p8LG.webp" height="200px" width="300px" alt="image">--></div>
+          </div>
+
+        <!-- <div class="grid-container">
+            <div class="grid-item">1</div>
+            <div class="grid-item">2</div>
+            <div class="grid-item">3</div>  
+            <div class="grid-item">4</div>
+            <div class="grid-item">5</div>
+            <div class="grid-item">6</div>  
+            <div class="grid-item">7</div>
+            <div class="grid-item">8</div>
+            <div class="grid-item">9</div>  
+          </div> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <form action="/action_page.php">
+            <label for="country_code">Country code:</label>
+            <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code"><br><br>
+            <input type="submit">
+          </form>
+
+<form action="./index.html">
+    <label for="naveen"></label>
+    <input type="text" id="naveen" name="naveen" pattern="[A-Za-z ]+{10}" title="only">
+    <input type="submit">
+</form> -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- <form action="">
+            <input type="text" name="fname" id="fname" pattern="[123]+" title="only anumbers" required>
+            <input type="text" name="fname" id="fname" pattern="[]" title="only anumbers" required>
+            <input type="text" pattern="">
+        <input type="submit">
+        </form> -->
+        
+    </body>
+</html>
